@@ -9,62 +9,74 @@
   <title>Language Suggester</title>
 </head>
 <body>
-  <h1>Language Suggester</h1>
-<h2>Find the language that's right for you!</h2>
+  <h1>Programming Language Suggester</h1>
+<h2>Find the one that's right for you!</h2>
+<p>Please fill out our brief survey below and we will match you with the best language based on your answers. Take care to answer thoughtfully as this survey has been carefully curated to make the most accurate matches.</p>
 
 <form>
   <input type="text" id="inputname" placeholder="Name">
-  <h3>I would describe my style as...</h3>
-  <input type="radio" id="style1" name="style" value="style1" checked>
-  <label for="style1">Roll-out-of-bed</label>
+
+  <div class="survey">
+    <h3>I would describe my style as...</h3>
+    <input type="radio" id="style1" name="style" value="style1" checked>
+    <label for="style1">Roll-out-of-bed</label>
+    <br>
+    <input type="radio" id="style2" name="style" value="style2">
+    <label for="style2">Casual but I clean up nice</label>
+    <br>
+    <input type="radio" id="style3" name="style" value="style3">
+    <label for="style3">Fashionista</label>
+  </div>
   <br>
-  <input type="radio" id="style2" name="style" value="style2">
-  <label for="style2">Casual but I clean up nice</label>
+  <div class="survey">
+    <h3>Pick a movie for movie night:</h3>
+    <input type="radio" id="movie1" name="movie" value="movie1" checked>
+    <label for="movie1">Toy Story</label>
+    <br>
+    <input type="radio" id="movie2" name="movie" value="movie2">
+    <label for="movie2">Shawshank Redemtion</label>
+    <br>
+    <input type="radio" id="movie3" name="movie" value="movie3">
+    <label for="movie3">The Devil Wears Prada</label>
+  </div>
   <br>
-  <input type="radio" id="style3" name="style" value="style3">
-  <label for="style3">Fashionista</label>
+  <div class="survey">
+    <h3>Who killed Mr. Body?</h3>
+    <input type="radio" id="scenario1" name="scenario" value="scenario1" checked>
+    <label for="scenario1">Professor Plum with the candlestick in the billiards room</label>
+    <br>
+    <input type="radio" id="scenario2" name="scenario" value="scenario2">
+    <label for="scenario2">Miss Scarlett with the rope in the kitchen</label>
+    <br>
+    <input type="radio" id="scenario3" name="scenario" value="scenario3">
+    <label for="scenario3">Reverend Green with the knife in the conservatory</label>
+  </div>
   <br>
-  <h3>Pick a movie for movie night:</h3>
-  <input type="radio" id="movie1" name="movie" value="movie1" checked>
-  <label for="movie1">Toy Story</label>
+  <div class="survey">
+    <h3>If I were a singer, I'd give the performance of a lifetime to this song...</h3>
+    <input type="radio" id="song1" name="song" value="song1" checked>
+    <label for="song1">Unwritten by Natasha Bedingfield</label>
+    <br>
+    <input type="radio" id="song2" name="song" value="song2">
+    <label for="song2">A Natural Woman by Aretha Franklin</label>
+    <br>
+    <input type="radio" id="song3" name="song" value="song3">
+    <label for="song3">Chandelier by Sia</label>
+  </div>
   <br>
-  <input type="radio" id="movie2" name="movie" value="movie2">
-  <label for="movie2">Shawshank Redemtion</label>
+  <div class="survey">
+    <h3>If I had to give it up, I could go the rest of my life without...</h3>
+    <input type="radio" id="hygiene1" name="hygiene" value="hygiene1" checked>
+    <label for="hygiene1">Clipping my toenails</label>
+    <br>
+    <input type="radio" id="hygiene2" name="hygiene" value="hygiene2">
+    <label for="hygiene2">Brushing my teeth</label>
+    <br>
+    <input type="radio" id="hygiene3" name="hygiene" value="hygiene3">
+    <label for="hygiene3">Washing my hair</label>
+  </div>
   <br>
-  <input type="radio" id="movie3" name="movie" value="movie3">
-  <label for="movie3">The Devil Wears Prada</label>
-  <br>
-  <h3>Who killed Mr. Body?</h3>
-  <input type="radio" id="scenario1" name="scenario" value="scenario1" checked>
-  <label for="scenario1">Professor Plum with the candlestick in the billiards room</label>
-  <br>
-  <input type="radio" id="scenario2" name="scenario" value="scenario2">
-  <label for="scenario2">Miss Scarlett with the rope in the kitchen</label>
-  <br>
-  <input type="radio" id="scenario3" name="scenario" value="scenario3">
-  <label for="scenario3">Reverend Green with the knife in the conservatory</label>
-  <br>
-  <h3>If I were a singer, I'd give the performance of a lifetime to this song...</h3>
-  <input type="radio" id="song1" name="song" value="song1" checked>
-  <label for="song1">Unwritten by Natasha Bedingfield</label>
-  <br>
-  <input type="radio" id="song2" name="song" value="song2">
-  <label for="song2">A Natural Woman by Aretha Franklin</label>
-  <br>
-  <input type="radio" id="song3" name="song" value="song3">
-  <label for="song3">Chandelier by Sia</label>
-  <br>
-  <h3>If I had to give it up, I could go the rest of my life without...</h3>
-  <input type="radio" id="hygiene1" name="hygiene" value="hygiene1" checked>
-  <label for="hygiene1">Clipping my toenails</label>
-  <br>
-  <input type="radio" id="hygiene2" name="hygiene" value="hygiene2">
-  <label for="hygiene2">Brushing my teeth</label>
-  <br>
-  <input type="radio" id="hygiene3" name="hygiene" value="hygiene3">
-  <label for="hygiene3">Washing my hair</label>
-  <br>
-  <button type="submit">Show me my language!</button>
+  <button class="button" type="submit">Show me my language!</button>
 </form>
 
 <div id="result" class="hidden">
