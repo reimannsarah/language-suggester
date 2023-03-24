@@ -13,6 +13,7 @@
 <h2>Find the language that's right for you!</h2>
 
 <form>
+  <input type="text" placeholder="Name">
   <h3>I would describe my style as...</h3>
   <input type="radio" id="style1" name="style" value="style1" checked>
   <label for="style1">Roll-out-of-bed</label>
@@ -55,9 +56,21 @@
   <br>
   <h3>If I had to give it up, I could go the rest of my life without...</h3>
   <input type="radio" id="hygiene1" name="hygiene" value="hygiene1">
-  
-
+  <label for="hygiene1">Clipping my toenails</label>
+  <br>
+  <input type="radio" id="hygiene2" name="hygiene" value="hygiene2">
+  <label for="hygiene2">Brushing my teeth</label>
+  <br>
+  <input type="radio" id="hygiene3" name="hygiene" value="hygiene3">
+  <label for="hygiene3">Washing my hair</label>
+  <br>
+  <button type="submit">Show me my language!</button>
 </form>
+
+<div id="languageresult" class="hidden">
+  <p>Thanks for taking our survey, <span id="name">______________</span>!</p>
+  <p>Based on your answers, the programming language that would be most beneficial for you to learn is <span id="language">______________</span>.</p>
+</div>
   
 </body>
 </html>
