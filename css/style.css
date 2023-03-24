@@ -3,15 +3,20 @@
 body {
   background-color: #97B1A6;
   font-family: Roboto, monospace;
+  color: #213B3E;
 }
 
 #inputname {
+  display: block;
   margin: 10px;
   
 }
+form {
+  width: 50%;
+}
 .survey {
   background-color: #698996;
-  width: 50%;
+  width: 100%;
   padding: 3px 5px 5px 7px;
   border-radius: 8px;
   float: left;
