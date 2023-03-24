@@ -2,20 +2,22 @@
 //   event.preventDefault ();
 // }
 
-function languageresult (event) {
+function languageResult (event) {
   event.preventDefault ();
   const thanks = document.getElementById("thanks"); 
   const name = document.querySelector("#inputname").value;
+  const result = document.querySelector("#result");
   const style = document.querySelector("input[name='style']:checked").value;
   const movie = document.querySelector("input[name='movie']:checked").value;
   const scenario = document.querySelector("input[name='scenario']:checked").value;
   const song = document.querySelector("input[name='song']:checked").value;
   const hygiene = document.querySelector("input[name='hygiene']:checked").value;
+
   
   thanks.innerText = name;
 
   if (style==="style3" && movie === "movie2" && scenario === "scenario3" && song === "song1" && hygiene === "hygiene2") {
-    language.innerText="Python";
+    language.innerText="Python";  
   } else if (style === "style2" && movie === "movie3" && scenario === "scenario1" && song === "song3" && hygiene === "hygiene2") {
     language.innerText = "C#";
   } else if (style === "style1" && movie === "movie2" && scenario === "scenario3" && song === "song1" && hygiene === "hygiene2") {
@@ -37,9 +39,10 @@ function languageresult (event) {
   } else {
     language.innerText = "Swift";
   }
+  result.removeAttribute("class");
 }
 
 
 window.addEventListener("load", function() {
-  document.querySelector("form").addEventListener("submit",languageresult)
+  document.querySelector("form").addEventListener("submit",languageResult)
 })
