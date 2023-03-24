@@ -26,7 +26,15 @@ function languageresult (event) {
     language.innerText = "C#";
   } else if (style === "style2" && movie === "movie3" && scenario === "scenario1" && song === "song2" && hygiene === "hygiene3") {
     language.innerText = "Ruby";
-  } else (){
+  } else if (style === "style1" && movie === "movie1" && scenario === "scenario1" && song === "song1" && hygiene === "hygiene1") {
+    language.innerText = "Rust";
+  } else if (style === "style2" && movie === "movie2" && scenario === "scenario2" && song === "song2" && hygiene === "hygiene2") {
+    language.innerText = "JavaScript";
+  } else if (style === "style3" && movie === "movie3" && scenario === "scenario3" && song === "song3" && hygiene === "hygiene3") {
+    language.innerText = "Go";
+  } else if (style === "style2" && movie === "movie2" && scenario === "scenario2" && song === "song2" && hygiene === "hygiene3") {
+    language.innerText = "Rust";
+  } else {
     language.innerText = "Swift";
   }
 }
