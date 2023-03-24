@@ -11,28 +11,26 @@ body {
   margin: 10px;
   
 }
-form {
-  width: 50%;
-}
+
 .survey {
   background-color: #698996;
   width: 100%;
   padding: 3px 5px 5px 7px;
   border-radius: 8px;
-  float: left;
   margin: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 .button {
-  margin: 20px 20px 20px 10px;
   padding: 3px;
   border-radius: 4px;
   background-color: #EBBAB9;
   width: 50%;
+  display: block;
+  margin: 0 auto:
 }
 
 .hidden {
-  /* display: none; */
-  width: 45%;
-  float: right;
+  display: none;
 }
