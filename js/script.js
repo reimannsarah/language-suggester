@@ -4,6 +4,7 @@
 
 function languageResult (event) {
   event.preventDefault ();
+  
   const thanks = document.getElementById("thanks"); 
   const name = document.querySelector("#inputname").value;
   const result = document.querySelector("#result");
@@ -39,7 +40,9 @@ function languageResult (event) {
   } else {
     language.innerText = "Swift";
   }
+  
   result.removeAttribute("class");
+  // result.setAttribute("class", "hidden");
 }
 
 
