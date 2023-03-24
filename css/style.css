@@ -6,6 +6,14 @@ body {
   color: #213B3E;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 #inputname {
   display: block;
   margin: 10px;
